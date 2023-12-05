@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exemplo Cadastro</title>
+</head>
+<body page="cadastro">
+    <div id="lista-registros">
+        <h2>Listar cadastros</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody id="listaRegistroBody">
+        </table>
+        <button onclick="visualizar('cadastro');">Novo Cadastro</button>
+    </div>
+    <div id="cadastro-registros">
+        <div class="label">
+            <div>Código: </div>
+            <div><input type="number" name="txtid" id="codigo" readonly></div>
+        </div>
+        <div class="label">
+            <div>Nome: </div>
+            <div><input type="text" name="txtnome" id="nome" readonly></div>
+        </div>
+        <div class="label">
+            <div>Telefone: </div>
+            <div><input type="text" name="txttelefone" id="telefone" readonly></div>
+        </div>
+        <div>
+            <button>Salvar</button>
+            <button onclick="visualizar('lista')" class="cinza">Cancelar</button>
+        </div>
+    </div>
+</tbody>
+    <script src="js/script.js"></script>
+</body>
+</html>
